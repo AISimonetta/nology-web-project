@@ -8,6 +8,42 @@ body {
   background-color: #fefdf8;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 20px;
+}
+nav .nav-logo {
+  height: 100px;
+}
+nav .nav-logo .nav-button {
+  height: 100px;
+  font-size: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+section .card-info {
+  display: inline-block;
+}
+
 footer {
   background-color: #fffcdd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
