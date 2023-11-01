@@ -1,5 +1,6 @@
-//Problems:
+//Problems-things to ask:
 //can not make font wight bolder for : nav-button, 
+//when nesting and colling to a class inside for rxample main , and later .main-header did not work, but it did with id.
 
 @use "./variаbles" as *;
 * {
@@ -52,7 +53,8 @@ main {
             flex-direction: column;
             justify-content: center;
         }
-        h1 {
+        
+        #main-header{
             color: $color-heading;
             font-size: 3em;
             margin: 50px 30px;
@@ -61,24 +63,65 @@ main {
         .device-img {
             height: 500px;
         }
-        img {
-            height: 300px;
+
+        #second-main-header{
+            color: $color-button-dark;
+            font-size: 2.5em;
+            margin: 50px 30px;
+        }
+
+        h2 {
+            color: $color-heading;
+            font-size: 2.1em;
+            margin-top: o;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
+
+.container p {
+    color: $color-button-dark;
+    margin: 30px 30px;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.blue-btn-1 {
+
+    color: white;
+    font-size: 2em;
+    background-color: $color-button-dark;
+    height: 100px;
+    width: 70%;
+    border: none;
+    border-radius: 10px ;
+
+}
 
 // FOOTER
 footer {
     background-color: #fffcdd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: light;
 
-    ul li {
-        list-style-type: none;
-        a {
-            text-decoration: none;
-            color: $color-button-dark;
+    ul  {
+        padding: 10px 0;
+        li {
+            list-style-type: none;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                a {
+                    text-decoration: none;
+                    color: $color-button-dark;
+                }
         }
     }
 }
