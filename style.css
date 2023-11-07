@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +49,7 @@ main #main-header {
   color: #48b9f1;
   font-size: 3em;
   margin: 50px 30px;
+  font-weight: bolder;
 }
 main .device-img {
   height: 500px;
@@ -64,10 +66,47 @@ main h2 {
   margin-left: 30px;
   margin-right: 30px;
 }
-main section {
+main .blue-btn-1 {
+  color: white;
+  font-size: 1.9em;
+  background-color: #394166;
+  height: 100px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+}
+main .blue-btn-1 .bolder-text {
+  font-weight: 500px;
+}
+main section header {
+  color: #394166;
+  font-size: 2.5em;
+  margin: 50px 30px;
+}
+main section .card {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 30px 0;
+}
+main section .card img {
+  height: 200px;
+  margin: 0 30px;
+}
+main section .card p {
+  color: #394166;
+  font-size: 1.9em;
+}
+main section .blue-btn-2 {
+  color: white;
+  font-size: 1.9em;
+  background-color: #394166;
+  height: 90px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 100px;
 }
 
 .container p {
@@ -77,20 +116,10 @@ main section {
   font-weight: lighter;
 }
 
-.blue-btn-1 {
-  color: white;
-  font-size: 2em;
-  background-color: #394166;
-  height: 100px;
-  width: 70%;
-  border: none;
-  border-radius: 10px;
-}
-
 footer {
   background-color: #fffcdd;
   font-size: 2em;
-  font-weight: light;
+  font-weight: bold;
 }
 footer ul {
   padding: 10px 0;

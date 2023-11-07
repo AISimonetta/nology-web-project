@@ -1,6 +1,6 @@
 //Problems-things to ask:
-//can not make font wight bolder for : nav-button, 
-//when nesting and colling to a class inside for rxample main , and later .main-header did not work, but it did with id.
+//can not make font weight bolder or light for anything not working  
+//when nesting and calling to a class inside for rxample main , and later .main-header did not work, but it did with id.
 
 @use "./variаbles" as *;
 * {
@@ -15,7 +15,7 @@ body {
 
 }
 
-// NAV
+//*** NAV ***
 nav {
     display: flex;
     flex-direction: row;
@@ -39,7 +39,7 @@ nav {
     }
 
 }
-// MAIN
+//*** MAIN ***
 
 main {
         display: flex;
@@ -58,6 +58,7 @@ main {
             color: $color-heading;
             font-size: 3em;
             margin: 50px 30px;
+            font-weight: bolder;
         }
 
         .device-img {
@@ -77,11 +78,57 @@ main {
             margin-left: 30px;
             margin-right: 30px;
         }
+        .blue-btn-1 {
+            color: white;
+            font-size: 1.9em;
+            background-color: $color-button-dark;
+            height: 100px;
+            width: 50%;
+            border: none;
+            border-radius: 10px ;
+
+            .bolder-text {
+                font-weight: 500px;
+            }
+        }
+
+
 
         section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            header {
+                color: $color-button-dark;
+                font-size: 2.5em;
+                margin: 50px 30px;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 30px 0;
+
+                img {
+                    height: 200px;
+                    margin: 0 30px;
+                }
+
+                p {
+                    color: $color-button-dark;
+                    font-size: 1.9em;
+                }
+            }
+
+            .blue-btn-2{
+                color: white;
+                font-size: 1.9em;
+                background-color: $color-button-dark;
+                height: 90px;
+                width: 50%;
+                border: none;
+                border-radius: 10px ;   
+                margin-bottom: 100px;
+            }
         }
     }
 
@@ -92,23 +139,11 @@ main {
     font-weight: lighter;
 }
 
-.blue-btn-1 {
-
-    color: white;
-    font-size: 2em;
-    background-color: $color-button-dark;
-    height: 100px;
-    width: 70%;
-    border: none;
-    border-radius: 10px ;
-
-}
-
-// FOOTER
+//*** FOOTER ***
 footer {
     background-color: #fffcdd;
     font-size: 2em;
-    font-weight: light;
+    font-weight: bold;
 
     ul  {
         padding: 10px 0;
